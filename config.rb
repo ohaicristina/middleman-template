@@ -1,5 +1,9 @@
 activate :aria_current
 activate :autoprefixer
+activate :blog do |blog|
+  blog.tag_template = "tag.html"
+  blog.layout = "layouts/post-layout"
+end
 
 set :css_dir, "assets/stylesheets"
 set :fonts_dir, "assets/fonts"
